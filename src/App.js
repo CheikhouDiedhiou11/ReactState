@@ -4,7 +4,7 @@ class App extends Component {
   state = {
     person: {
       fullName: 'Cheikhou Diedhiou',
-      bio: 'A developer from Lac Rose.',
+      bio: ' Developpeur WEB depuis Lac Rose.',
       imgSrc: 'https://media.licdn.com/dms/image/D4E03AQGj2HcU6UwFsQ/profile-displayphoto-shrink_200_200/0/1690204455292?e=1698883200&v=beta&t=jzTwkCd7QEw0-gOiOme8NP9Ls7E9POwDkjqmOLeGdxs',
       profession: 'Developpeur React js',
     },
@@ -42,7 +42,7 @@ class App extends Component {
         </button>
 
         {show && (
-          <div className="profile">
+          <div className="profil">
             <h2>{person.fullName}</h2>
             <p>{person.bio}</p>
             <img src={person.imgSrc} alt={person.fullName} />
@@ -50,7 +50,7 @@ class App extends Component {
           </div>
         )}
 
-        <p>Time Interval since Mounting: {timeInterval} seconds</p>
+        <p>Intervalle de temps depuis le montage: {timeInterval} seconds</p>
       </div>
     );
   }
